@@ -16,7 +16,8 @@ This project builds a full data pipeline:
 - Stores data in a SQLite database using SQLAlchemy
 - Simulates 90 days of sales activity
 - Exports data to CSV for visualization
-- Builds dashboards using Streamlit and Lovable AI
+- Builds an interactive dashboard using Streamlit (in this repo), plus a separate
+  exploratory dashboard built with Lovable AI (not included in this repository)
 
 ---
 
@@ -62,3 +63,13 @@ Python, SQLAlchemy, SQLite, Pandas, Faker, Streamlit, Lovable AI
 ---
 
 ## How to Run
+
+```bash
+python -m venv venv
+venv\Scripts\activate          # Windows
+pip install -r requirements.txt
+
+python seed.py                 # creates smartinventory.db and generates 90 days of sales data
+python export.py               # optional: re-exports sales_data.csv from the database
+streamlit run app.py           # launches the dashboard
+```
