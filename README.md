@@ -1,5 +1,9 @@
 # SmartInventory – QuickMart Sales Analysis System
 
+## Project Evidence
+
+![SmartInventory Streamlit Dashboard](docs/dashboard.png)
+
 ## Overview
 SmartInventory is a data analytics project that simulates grocery store sales to help QuickMart improve inventory decisions. It generates fake product and sales data, stores it in a database, and analyzes patterns to reduce stock shortages.
 
